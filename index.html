@@ -26,7 +26,7 @@
                 </tr>
                 <tr>
                     <td><label>date of birth</label></td>
-                    <td><input type="date" name="date" id="dob" required /></td>
+                    <td><input type="date" name="date" id="dob" min="1968-07-31" max="2005-07-31" required /></td>
                 </tr>
                 <tr>
                     <td><input type="checkbox" name="term" id="Accepted term"  /></td>
@@ -39,21 +39,22 @@
         </form>
         <div>
             <h1>Result</h1>
-            <table>
-               <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Password</th>
-                    <th>Date of birth</th>
-                    <th>terms and conditions</th>
-                </tr>
-               </thead>
-               <tbody id="tablebody">
+            <div >
+              <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Dob</th>
+                        <th>Accepted terms?</th>
+                    </tr>
+                </thead>
+                <tbody id="user-entries">
 
-               </tbody>
-
-            </table>
+                </tbody>
+              </table>
+            </div>
             <div id="result"></div>
         </div>
     </div>
