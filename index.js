@@ -3,8 +3,8 @@ document.getElementById("form").addEventListener('submit', function(event){
     
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
-    const pass = document.getElementById('pass').value;
-    const dob = document.getElementById('date').value;
+    const password = document.getElementById('password').value;
+    const dob = document.getElementById('dob').value;
     const term = document.getElementById('term').value;
 
     const ans = document.querySelector('#tablebody');
@@ -12,7 +12,7 @@ document.getElementById("form").addEventListener('submit', function(event){
     row.innerHTML = `
     <td>${name}</td>
     <td>${email}</td>
-    <td>${pass}</td>
+    <td>${password}</td>
     <td>${dob}</td>
     <td>${term ? "yes" : "no"}</td>
     `;
